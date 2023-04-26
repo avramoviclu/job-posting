@@ -1,6 +1,6 @@
 <?php
 
-use App\Interfaces\UserInterface;
+use App\Interfaces\PostInterface;
 
 class PostRepository implements PostInterface
 {
