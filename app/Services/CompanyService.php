@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Repositories\CompanyRepository;
+use App\Repositories\Eloquent\CompanyRepository;
  
 class CompanyService {
 

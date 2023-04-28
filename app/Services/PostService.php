@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Repositories\PostRepository;
+use App\Repositories\Eloquent\PostRepository;
  
 class PostService {
 

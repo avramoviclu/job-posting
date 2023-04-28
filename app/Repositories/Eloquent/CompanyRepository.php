@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Repositories;
+namespace App\Repositories\Eloquent;
 
-use App\Interfaces\UserInterface;
+use App\Interfaces\CompanyInterface;
 
-class UserRepository implements UserInterface
+class CompanyRepository implements CompanyInterface
 {
     public function create() {
 
