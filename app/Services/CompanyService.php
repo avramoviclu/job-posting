@@ -15,18 +15,18 @@ class CompanyService {
         $this->companyRepository = $companyRepository;
     }
 
-    public function create()
+    public function create(array $data)
     {
-        //
+        return $this->companyRepository->create($data);
     }
 
-    public function update()
+    public function update(string $id, array $data)
     {
-        //
+        return $this->companyRepository->update($id, $data);
     }
 
-    public function delete()
+    public function delete(string $id)
     {
-        //
+        return $this->companyRepository->delete($id);
     }
 }

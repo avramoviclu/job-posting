@@ -15,18 +15,18 @@ class UserService {
         $this->userRepository = $userRepository;
     }
 
-    public function create()
+    public function create(array $data)
     {
-        //
+        return $this->userRepository->create($data);
     }
 
-    public function update()
+    public function update(string $id, array $data)
     {
-        //
+        return $this->userRepository->update($id, $data);
     }
 
-    public function delete()
+    public function delete(string $id)
     {
-        //
+        return $this->userRepository->delete($id);
     }
 }
