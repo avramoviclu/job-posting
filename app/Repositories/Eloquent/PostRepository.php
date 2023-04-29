@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Repositories\Eloquent;
 
 use App\Interfaces\PostInterface;
@@ -10,7 +12,7 @@ class PostRepository implements PostInterface
 
     }
 
-    public function update(string $id) {
+    public function update(string $id, array $data) {
 
     }
 
