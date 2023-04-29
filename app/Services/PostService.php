@@ -13,18 +13,18 @@ class PostService {
         $this->postRepository = $postRepository;
     }
 
-    public function create()
+    public function create(array $data)
     {
-        //
+        return $this->postRepository->create($data);
     }
 
-    public function update()
+    public function update(string $id, $data)
     {
-        //
+        return $this->postRepository->update($id, $data);
     }
 
-    public function delete()
+    public function delete(string $id)
     {
-        //
+        return $this->postRepository->delete($id);
     }
 }

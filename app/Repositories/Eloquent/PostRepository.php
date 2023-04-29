@@ -6,7 +6,7 @@ use App\Interfaces\PostInterface;
 
 class PostRepository implements PostInterface
 {
-    public function create() {
+    public function create(array $data) {
 
     }
 

@@ -4,7 +4,7 @@ namespace App\Interfaces;
 
 interface PostInterface
 {
-    public function create();
+    public function create(array $data);
 
     public function update(string $id);
 
