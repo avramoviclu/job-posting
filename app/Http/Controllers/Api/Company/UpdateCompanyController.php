@@ -16,8 +16,8 @@ class UpdateCompanyController extends Controller
         $this->companyService = $companyService;
     }
 
-    public function __invoke(UpdateCompanyRequest $request)
+    public function __invoke(UpdateCompanyRequest $request, string $id)
     {
-        return $this->companyService->update($request->id, $request->toArray());
+        return $this->companyService->update($id, $request->toArray());
     }
 }

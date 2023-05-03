@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Company\CreateCompanyRequest;
 use App\Services\CompanyService;
  
 class DeleteCompanyController extends Controller
@@ -16,8 +15,8 @@ class DeleteCompanyController extends Controller
         $this->companyService = $companyService;
     }
 
-    public function __invoke(CreateCompanyRequest $request)
+    public function __invoke(string $id)
     {
-        return $this->companyService->delete($request->id);
+        return $this->companyService->delete($id);
     }
 }
