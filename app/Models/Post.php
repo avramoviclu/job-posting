@@ -21,6 +21,23 @@ class Post extends Model
         'content_id',
         'title',
         'is_active',
-        'published_at'
+        'published_at',
+        'meta_title',
+        'meta_description',
+        'meta_keywords',
+        'meta_canonical_url',
+        'og_title',
+        'og_description',
+        'og_type',
+        'og_image',
+        'og_url',
+        'twitter_title',
+        'twitter_description',
+        'twitter_image',
+        'twitter_card'
+    ];
+
+    protected $casts = [
+        'is_active' => 'boolean',
     ];
 }
