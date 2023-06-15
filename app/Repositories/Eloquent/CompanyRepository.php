@@ -19,4 +19,12 @@ class CompanyRepository implements CompanyInterface
     public function delete(string $id) {
         
     }
+
+    public function addUser(string $id) {
+
+    }
+
+    public function removeUser(string $id) {
+        
+    }
 }

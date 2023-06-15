@@ -29,4 +29,14 @@ class CompanyService {
     {
         return $this->companyRepository->delete($id);
     }
+
+    public function addUser(string $id)
+    {
+        return $this->companyRepository->addUser($id);
+    }
+
+    public function removeUser(string $id)
+    {
+        return $this->companyRepository->removeUser($id);
+    }
 }
