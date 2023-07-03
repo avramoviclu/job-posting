@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('companies', function (Blueprint $table) {
-            $table->ulid('id');
-            $table->string('name');
-            $table->string('description');
-            $table->timestamps();
-            $table->softDeletes();
+        Schema::create('post_tag', function (Blueprint $table) {
+            $table->foreignUlid('post_id');
+            $table->foreignUlid('tag_id');
         });
     }
 
@@ -25,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('companies');
+        Schema::dropIfExists('post_tag');
     }
 };
