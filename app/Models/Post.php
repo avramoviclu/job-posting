@@ -5,7 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Models\Content;
 
 class Post extends Model
 {
@@ -34,10 +36,16 @@ class Post extends Model
         'twitter_title',
         'twitter_description',
         'twitter_image',
-        'twitter_card'
+        'twitter_card',
+        'email'
     ];
 
     protected $casts = [
         'is_active' => 'boolean',
     ];
+
+    public function content(): HasOne
+    {
+        return $this->hasOne(Content::class);
+    }
 }

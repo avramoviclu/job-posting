@@ -15,6 +15,8 @@ return new class extends Migration
             $table->ulid('id');
             $table->string('name');
             $table->string('description');
+            $table->string('email');
+            $table->string('timezone');
             $table->timestamps();
             $table->softDeletes();
         });

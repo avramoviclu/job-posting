@@ -35,6 +35,8 @@ return new class extends Migration
             $table->string('twitter_image')->nullable();
             $table->string('twitter_card')->nullable();
 
+            $table->string('email');
+
             $table->timestamps();
             $table->softDeletes();
         });
