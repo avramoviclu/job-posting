@@ -7,7 +7,9 @@ namespace App\DTO;
 class CompanyDTO
 {
     public string $name;
+    
     public string $description;
+    
     public string $timezone;
 
     public function __construct(string $name, string $description, string $timezone)
