@@ -6,7 +6,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\Company\AddUserRequest;
 use App\Services\CompanyService;
- 
+
 class AddUserToCompanyController extends Controller
 {
     protected CompanyService $companyService;
@@ -18,6 +18,6 @@ class AddUserToCompanyController extends Controller
 
     public function __invoke(AddUserRequest $request)
     {
-        return $this->companyService->addUser($request->toArray());
+        return $this->companyService->addUser($request->user_id);
     }
 }
